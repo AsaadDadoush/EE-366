@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=Ex1.asm
+SOURCEFILES_QUOTED_IF_SPACED=Ex1.asm Ex2.asm
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/Ex1.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/Ex1.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/Ex1.o ${OBJECTDIR}/Ex2.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/Ex1.o.d ${OBJECTDIR}/Ex2.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/Ex1.o
+OBJECTFILES=${OBJECTDIR}/Ex1.o ${OBJECTDIR}/Ex2.o
 
 # Source Files
-SOURCEFILES=Ex1.asm
+SOURCEFILES=Ex1.asm Ex2.asm
 
 
 
@@ -102,6 +102,14 @@ ${OBJECTDIR}/Ex1.o: Ex1.asm  nbproject/Makefile-${CND_CONF}.mk
 	Ex1.asm \
 	 -misa=std -msummary=+mem,-psect,-class,-hex,-file,-sha1,-sha256,-xml,-xmlfull -fmax-errors=20 -mwarn=0 -xassembler-with-cpp
 	
+${OBJECTDIR}/Ex2.o: Ex2.asm  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/Ex2.o 
+	${MP_AS} -mcpu=PIC18F45K80 -c \
+	-o ${OBJECTDIR}/Ex2.o \
+	Ex2.asm \
+	 -misa=std -msummary=+mem,-psect,-class,-hex,-file,-sha1,-sha256,-xml,-xmlfull -fmax-errors=20 -mwarn=0 -xassembler-with-cpp
+	
 else
 ${OBJECTDIR}/Ex1.o: Ex1.asm  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}" 
@@ -109,6 +117,14 @@ ${OBJECTDIR}/Ex1.o: Ex1.asm  nbproject/Makefile-${CND_CONF}.mk
 	${MP_AS} -mcpu=PIC18F45K80 -c \
 	-o ${OBJECTDIR}/Ex1.o \
 	Ex1.asm \
+	 -misa=std -msummary=+mem,-psect,-class,-hex,-file,-sha1,-sha256,-xml,-xmlfull -fmax-errors=20 -mwarn=0 -xassembler-with-cpp
+	
+${OBJECTDIR}/Ex2.o: Ex2.asm  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/Ex2.o 
+	${MP_AS} -mcpu=PIC18F45K80 -c \
+	-o ${OBJECTDIR}/Ex2.o \
+	Ex2.asm \
 	 -misa=std -msummary=+mem,-psect,-class,-hex,-file,-sha1,-sha256,-xml,-xmlfull -fmax-errors=20 -mwarn=0 -xassembler-with-cpp
 	
 endif

@@ -1,13 +1,14 @@
-# 1 "Ex1.asm"
+# 1 "Ex2.asm"
 # 1 "<built-in>" 1
-# 1 "Ex1.asm" 2
-; Name: Asaad W. Dadoush, No. 1766585
+# 1 "Ex2.asm" 2
+; Name Asaad W. Dadoush, No. 1766585
+;***************************************************
+; Lab 1 ? Example 2
 ;**************************************************************
-; Lab 1 Example 1
+; Assembly program to load value 48 in WREG register and then
+; increment it by 1 and move it to File Register location 20H.
 ;**************************************************************
-; Assembly program to move value 2FH to WREG register.
-; Then replace it with the value 30H.
-;**************************************************************
+
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\proc\\pic18f45k80.inc" 1 3
 # 48 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\proc\\pic18f45k80.inc" 3
@@ -26277,11 +26278,14 @@ TOSU_TOSU_POSITION equ 0000h
 TOSU_TOSU_SIZE equ 0005h
 TOSU_TOSU_LENGTH equ 0005h
 TOSU_TOSU_MASK equ 001Fh
-# 9 "Ex1.asm" 2
+# 10 "Ex2.asm" 2
  PSECT Start
     org 0
+
 Start:
-    MOVLW 0x2F ; Load Data in WREG
-    MOVLW 0x30 ; Load another data
+    MOVLW 48 ; load a decimal number in WREG
+    ADDLW 1 ; ADD 1 to WREG
+    MOVWF 0x20; Move the data from WREG to FileReg 20H
+
     GOTO $ ; Wait here
     END

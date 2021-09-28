@@ -13,6 +13,7 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>Ex1.asm</itemPath>
+      <itemPath>Ex2.asm</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
