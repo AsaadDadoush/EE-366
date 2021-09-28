@@ -1,0 +1,15 @@
+isa$xinst 0 0 ABS 0
+isa$std 1 0 ABS 0
+__Hspace_0 8 0 ABS 0
+__Lspace_0 0 0 ABS 0
+__HStart 8 0 ABS 0
+__LStart 0 0 ABS 0
+%segments
+%locals
+build/default/debug/Ex1.o
+C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\proc\\pic18f45k80.inc
+Ex1.asm
+10 0 0 ABS 0
+12 0 0 ABS 0
+13 2 0 ABS 0
+14 4 0 ABS 0
