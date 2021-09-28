@@ -11,10 +11,8 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$build/default/production/Ex1.o
-Start - 0 0 0 8 1
-$build/default/production/Ex2.o
-Start - 0 8 8 A 1
+$build/default/production/Ex3.o
+Start - 0 0 0 A 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
@@ -33,17 +31,17 @@ BANK6 600-6FF 1
 BANK7 700-7FF 1
 BANK8 800-8FF 1
 BANK9 900-9FF 1
-CONST 12-7FFF 1
+CONST A-7FFF 1
 IDLOC 200000-200007 1
 SMALLCONST F00-7FFF 1
-CODE 12-7FFF 1
+CODE A-7FFF 1
 BANK10 A00-AFF 1
 BANK11 B00-BFF 1
 BANK12 C00-CFF 1
 BANK13 D00-DFF 1
 BANK14 E00-E40 1
-BIGRAM 12-E40 1
-COMRAM 12-5F 1
+BIGRAM A-E40 1
+COMRAM A-5F 1
 CONFIG 300000-30000D 1
 EEDATA F00000-F003FF 1
 MEDIUMCONST F00-7FFF 1
@@ -60,17 +58,12 @@ MEDIUMCONST F00-7FFF 1
 # are in ascending order of addresses.
 # All other numeric values are in decimal.
 %LINETAB
-$build/default/production/Ex1.o
-0 Start ABS >10:C:\Users\asaad\MPLABXProjects\Ex1.X\Ex1.asm
-0 Start ABS >12:C:\Users\asaad\MPLABXProjects\Ex1.X\Ex1.asm
-2 Start ABS >13:C:\Users\asaad\MPLABXProjects\Ex1.X\Ex1.asm
-4 Start ABS >14:C:\Users\asaad\MPLABXProjects\Ex1.X\Ex1.asm
-$build/default/production/Ex2.o
-8 Start ABS >11:C:\Users\asaad\MPLABXProjects\Ex1.X\Ex2.asm
-8 Start ABS >14:C:\Users\asaad\MPLABXProjects\Ex1.X\Ex2.asm
-A Start ABS >15:C:\Users\asaad\MPLABXProjects\Ex1.X\Ex2.asm
-C Start ABS >16:C:\Users\asaad\MPLABXProjects\Ex1.X\Ex2.asm
-E Start ABS >18:C:\Users\asaad\MPLABXProjects\Ex1.X\Ex2.asm
+$build/default/production/Ex3.o
+0 Start ABS >10:C:\Users\asaad\MPLABXProjects\Ex1.X\Ex3.asm
+0 Start ABS >12:C:\Users\asaad\MPLABXProjects\Ex1.X\Ex3.asm
+2 Start ABS >13:C:\Users\asaad\MPLABXProjects\Ex1.X\Ex3.asm
+4 Start ABS >14:C:\Users\asaad\MPLABXProjects\Ex1.X\Ex3.asm
+6 Start ABS >15:C:\Users\asaad\MPLABXProjects\Ex1.X\Ex3.asm
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -83,11 +76,11 @@ E Start ABS >18:C:\Users\asaad\MPLABXProjects\Ex1.X\Ex2.asm
 # was defined in a psect then <psect> will be "-". File-name
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
-__Hspace_0 12 0 ABS 0 - -
-isa$xinst 0 0 ABS 0 - build/default/production/Ex1.o
-__HStart 12 0 ABS 0 Start -
+__Hspace_0 A 0 ABS 0 - -
+isa$xinst 0 0 ABS 0 - build/default/production/Ex3.o
+__HStart A 0 ABS 0 Start -
 __LStart 0 0 ABS 0 Start -
-isa$std 1 0 ABS 0 - build/default/production/Ex1.o
+isa$std 1 0 ABS 0 - build/default/production/Ex3.o
 __Lspace_0 0 0 ABS 0 - -
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.

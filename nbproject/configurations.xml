@@ -14,6 +14,7 @@
                    projectFiles="true">
       <itemPath>Ex1.asm</itemPath>
       <itemPath>Ex2.asm</itemPath>
+      <itemPath>Ex3.asm</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -64,6 +65,10 @@
         <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
         <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
       </makeCustomizationType>
+      <item path="Ex1.asm" ex="true" overriding="false">
+      </item>
+      <item path="Ex2.asm" ex="true" overriding="false">
+      </item>
       <Simulator>
         <property key="codecoverage.enabled" value="Disable"/>
         <property key="codecoverage.enableoutputtofile" value="false"/>
