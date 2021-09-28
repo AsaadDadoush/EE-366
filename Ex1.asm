@@ -1,6 +1,6 @@
-; Name: No.
+; Name: Asaad W. Dadoush,  No. 1766585
 ;**************************************************************
-; Lab 1 ? Example 1
+; Lab 1  Example 1
 ;**************************************************************
 ; Assembly program to move value 2FH to WREG register.
 ; Then replace it with the value 30H.
