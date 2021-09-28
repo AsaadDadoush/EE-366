@@ -15,6 +15,7 @@
       <itemPath>Ex1.asm</itemPath>
       <itemPath>Ex2.asm</itemPath>
       <itemPath>Ex3.asm</itemPath>
+      <itemPath>Activity1.asm</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -69,6 +70,8 @@
       </item>
       <item path="Ex2.asm" ex="true" overriding="false">
       </item>
+      <item path="Ex3.asm" ex="true" overriding="false">
+      </item>
       <Simulator>
         <property key="codecoverage.enabled" value="Disable"/>
         <property key="codecoverage.enableoutputtofile" value="false"/>
@@ -80,7 +83,7 @@
         <property key="oscillator.rcfrequency" value="250"/>
         <property key="oscillator.rcfrequencyunit" value="Kilo"/>
         <property key="periphADC1.altscl" value="false"/>
-        <property key="periphADC1.minTacq" value=""/>
+        <property key="periphADC1.minTacq" value="5"/>
         <property key="periphADC1.tacqunits" value="microseconds"/>
         <property key="periphADC2.altscl" value="false"/>
         <property key="periphADC2.minTacq" value=""/>

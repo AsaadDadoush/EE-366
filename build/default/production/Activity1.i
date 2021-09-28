@@ -1,12 +1,15 @@
-# 1 "Ex2.asm"
+# 1 "Activity1.asm"
 # 1 "<built-in>" 1
-# 1 "Ex2.asm" 2
+# 1 "Activity1.asm" 2
 ; Name Asaad W. Dadoush, No. 1766585
-;***************************************************
-; Lab 1 ? Example 2
 ;**************************************************************
-; Assembly program to load value 48 in WREG register and then
-; increment it by 1 and move it to File Register location 20H.
+; Lab 1 ? ACTIVITY 1
+;**************************************************************
+;Write and assemble a program to load the value 0x17 to WREG register.
+;Then from register WREG move it to
+;File Register locations 32H and 47H. Then load the
+;value 0x26 in WREG and move it to File Register location
+;0x3A. Use the MPLAB X simulator to single-step the program and examine the file registers.
 ;**************************************************************
 
 
@@ -26278,14 +26281,14 @@ TOSU_TOSU_POSITION equ 0000h
 TOSU_TOSU_SIZE equ 0005h
 TOSU_TOSU_LENGTH equ 0005h
 TOSU_TOSU_MASK equ 001Fh
-# 10 "Ex2.asm" 2
+# 13 "Activity1.asm" 2
  PSECT Start
     org 0
-
 Start:
-    MOVLW 48 ; load a decimal number in WREG
-    ADDLW 1 ; ADD 1 to WREG
-    MOVWF 0x20; Move the data from WREG to FileReg 20H
-
-    GOTO $ ; Wait here
+    MOVLW 0x17
+    MOVWF 0X32
+    MOVWF 0X47
+    MOVLW 0X26
+    MOVWF 0X3A
+    GOTO $
     END

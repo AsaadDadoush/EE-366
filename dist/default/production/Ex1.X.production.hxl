@@ -1,10 +1,10 @@
 ### HEXMate logfile and output summary ###
 ### Memory Usage ###
  Unused memory ranges:
-  Ah - 3Fh
+  Eh - 3Fh
   
  dist/default/production\Ex1.X.production.hex ranges:
-  0h - 9h
+  0h - Dh
   
 ### Hex Memory Map ###
  Legend:
@@ -18,4 +18,4 @@
   & = Find & replace opcode
   X = Find & delete opcode
   1 = dist/default/production\Ex1.X.production.hex
-00000000: 1111111111------------------------------------------------------
+00000000: 11111111111111--------------------------------------------------

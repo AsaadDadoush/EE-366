@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=Ex3.asm
+SOURCEFILES_QUOTED_IF_SPACED=Activity1.asm
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/Ex3.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/Ex3.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/Activity1.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/Activity1.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/Ex3.o
+OBJECTFILES=${OBJECTDIR}/Activity1.o
 
 # Source Files
-SOURCEFILES=Ex3.asm
+SOURCEFILES=Activity1.asm
 
 
 
@@ -94,21 +94,21 @@ MP_PROCESSOR_OPTION=PIC18F45K80
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: pic-as-assembler
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/Ex3.o: Ex3.asm  nbproject/Makefile-${CND_CONF}.mk 
+${OBJECTDIR}/Activity1.o: Activity1.asm  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/Ex3.o 
+	@${RM} ${OBJECTDIR}/Activity1.o 
 	${MP_AS} -mcpu=PIC18F45K80 -c \
-	-o ${OBJECTDIR}/Ex3.o \
-	Ex3.asm \
+	-o ${OBJECTDIR}/Activity1.o \
+	Activity1.asm \
 	 -misa=std -msummary=+mem,-psect,-class,-hex,-file,-sha1,-sha256,-xml,-xmlfull -fmax-errors=20 -mwarn=0 -xassembler-with-cpp
 	
 else
-${OBJECTDIR}/Ex3.o: Ex3.asm  nbproject/Makefile-${CND_CONF}.mk 
+${OBJECTDIR}/Activity1.o: Activity1.asm  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/Ex3.o 
+	@${RM} ${OBJECTDIR}/Activity1.o 
 	${MP_AS} -mcpu=PIC18F45K80 -c \
-	-o ${OBJECTDIR}/Ex3.o \
-	Ex3.asm \
+	-o ${OBJECTDIR}/Activity1.o \
+	Activity1.asm \
 	 -misa=std -msummary=+mem,-psect,-class,-hex,-file,-sha1,-sha256,-xml,-xmlfull -fmax-errors=20 -mwarn=0 -xassembler-with-cpp
 	
 endif
