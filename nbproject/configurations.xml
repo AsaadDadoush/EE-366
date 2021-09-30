@@ -16,6 +16,7 @@
       <itemPath>Ex2.asm</itemPath>
       <itemPath>Ex3.asm</itemPath>
       <itemPath>Activity1.asm</itemPath>
+      <itemPath>Activity2.asm</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -66,11 +67,33 @@
         <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
         <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
       </makeCustomizationType>
+      <item path="Activity1.asm" ex="true" overriding="false">
+      </item>
+      <item path="Activity2.asm" ex="true" overriding="false">
+      </item>
       <item path="Ex1.asm" ex="true" overriding="false">
+        <pic-as-assembler>
+        </pic-as-assembler>
+        <pic-as-global>
+        </pic-as-global>
+        <pic-as-linker>
+        </pic-as-linker>
       </item>
       <item path="Ex2.asm" ex="true" overriding="false">
+        <pic-as-assembler>
+        </pic-as-assembler>
+        <pic-as-global>
+        </pic-as-global>
+        <pic-as-linker>
+        </pic-as-linker>
       </item>
       <item path="Ex3.asm" ex="true" overriding="false">
+        <pic-as-assembler>
+        </pic-as-assembler>
+        <pic-as-global>
+        </pic-as-global>
+        <pic-as-linker>
+        </pic-as-linker>
       </item>
       <Simulator>
         <property key="codecoverage.enabled" value="Disable"/>

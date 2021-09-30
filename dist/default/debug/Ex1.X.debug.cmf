@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$build/default/production/Activity2.o
+$build/default/debug/Activity2.o
 Start - 0 0 0 12 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
@@ -58,7 +58,7 @@ MEDIUMCONST F00-7FFF 1
 # are in ascending order of addresses.
 # All other numeric values are in decimal.
 %LINETAB
-$build/default/production/Activity2.o
+$build/default/debug/Activity2.o
 0 Start ABS >14:C:\Users\asaad\MPLABXProjects\Ex1.X\Activity2.asm
 0 Start ABS >16:C:\Users\asaad\MPLABXProjects\Ex1.X\Activity2.asm
 2 Start ABS >17:C:\Users\asaad\MPLABXProjects\Ex1.X\Activity2.asm
@@ -81,10 +81,10 @@ E Start ABS >23:C:\Users\asaad\MPLABXProjects\Ex1.X\Activity2.asm
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
 __Hspace_0 12 0 ABS 0 - -
-isa$xinst 0 0 ABS 0 - build/default/production/Activity2.o
+isa$xinst 0 0 ABS 0 - build/default/debug/Activity2.o
 __HStart 12 0 ABS 0 Start -
 __LStart 0 0 ABS 0 Start -
-isa$std 1 0 ABS 0 - build/default/production/Activity2.o
+isa$std 1 0 ABS 0 - build/default/debug/Activity2.o
 __Lspace_0 0 0 ABS 0 - -
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.

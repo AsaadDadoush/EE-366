@@ -1,6 +1,6 @@
 ; Name Asaad W. Dadoush, No. 1766585
 ;**************************************************************
-; Lab 1 ? ACTIVITY 1 
+; Lab 1  ACTIVITY 1 
 ;**************************************************************
 ;Write and assemble a program to load the value 0x17 to WREG register. 
 ;Then from register WREG move it to
